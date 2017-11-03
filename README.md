@@ -3,6 +3,8 @@ A better way to ensafe javascript integers from being treated as octal numbers
 
 ### Javascript flaw on integers base, dealing with octal numbers (Out of strict mode):
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/farskid/better-js-integers.svg)](https://greenkeeper.io/)
+
 when you pass an integer with leading zeros such as __0112__ to any javascript operator, it looks inside the digits, if all digits are less than 8, it behaves like your integer is in base 8 (Octal) and converts it internally to base 10.
 But if you integer has any digit greater than or equal to 8, Javascript will treat the integer as an integer in base 10.
 
